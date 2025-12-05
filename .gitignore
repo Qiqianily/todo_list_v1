@@ -1,0 +1,11 @@
+/target
+.env
+.DS_Store
+.idea/
+.zed/
+logs/
+dev.http
+dev.toml
+prod.toml
+prod.https
+.env_prod

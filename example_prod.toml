@@ -1,0 +1,24 @@
+# base configuration
+[base]
+host = "0.0.0.0"
+port = 7788
+log_level = "info"
+allowed_hosts = [
+    "http://xxxxxx:7777",
+    "http://localhost:5173",
+    "http://localhost:7788"
+]
+
+[database]
+url = "postgresql://postgres:******@container_name/da_name?options=-c%20timezone=Asia/Shanghai"
+min_connections = 10     # 最小连接数
+max_connections = 50     # 最大连接数
+
+[redis]
+url = "redis://:password@container_name"
+max_open = 20            # 最大连接数
+max_idle = 10            # 最大空闲数
+timeout_sec = 5          # 超时 5 秒
+
+# append new info to test image copy function
+# new info one more for test

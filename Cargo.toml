@@ -1,0 +1,30 @@
+[package]
+name = "todo_list_v1"
+version = "0.1.0"
+edition = "2024"
+description = "A simple todo list application"
+authors = ["Qiqianily <Joedian@163.com>"]
+license = "MIT"
+
+[dependencies]
+anyhow = "1.0.100"
+thiserror = "2.0.17"
+tokio = { version = "1.48.0", features = ["rt-multi-thread", "signal"] }
+serde = { version = "1.0.228", features=["derive"]}
+serde_json = "1.0.145"
+axum = { version = "0.8.7", features = ["macros"]}
+axum-valid={ version = "0.24.0",features = ["full_validator"]}
+argon2={ version = "0.6.0-rc.1",features = ["std"]}
+sea-orm = { version = "2.0.0-rc.9", features = ["sqlx-postgres", "runtime-tokio-rustls", "macros", "with-chrono", "debug-print", "with-rust_decimal", "with-uuid"] }
+tracing = { version = "0.1.43", features = ["async-await"] }
+tracing-subscriber = { version = "0.3.22", features = ["env-filter", "chrono"] }
+tracing-appender = "0.2.4"
+redis = { version = "0.32.7", features = ["tokio-comp"] }
+mobc = "0.9.0"
+mobc-redis = "0.9.0"
+clap = { version = "4.5.53", features = ["derive"] }
+config = { version = "0.15.19", features = ["toml"] }
+tower-http = { version = "0.6.7", features = ["cors", "trace", "timeout", "limit", "normalize-path", "auth"] }
+jsonwebtoken = { version = "10.2.0", features = ["rust_crypto", "aws-lc-rs"] }
+xid = "1.1.1"
+bytesize = "2.3.1"
