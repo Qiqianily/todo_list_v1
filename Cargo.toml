@@ -14,7 +14,8 @@ serde = { version = "1.0.228", features=["derive"]}
 serde_json = "1.0.145"
 axum = { version = "0.8.7", features = ["macros"]}
 axum-valid={ version = "0.24.0",features = ["full_validator"]}
-argon2={ version = "0.6.0-rc.1",features = ["std"]}
+validator = { version = "0.20.0", features = ["derive"] }
+argon2 = { version = "0.6.0-rc.3",features = ["std","getrandom"]}
 sea-orm = { version = "2.0.0-rc.9", features = ["sqlx-postgres", "runtime-tokio-rustls", "macros", "with-chrono", "debug-print", "with-rust_decimal", "with-uuid"] }
 tracing = { version = "0.1.43", features = ["async-await"] }
 tracing-subscriber = { version = "0.3.22", features = ["env-filter", "chrono"] }

@@ -1,6 +1,9 @@
 pub mod app;
+pub mod common;
 pub mod conf;
 pub mod db;
+pub mod entities;
+pub mod handlers;
 pub mod log;
 pub mod middlewares;
 pub mod response;

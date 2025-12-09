@@ -3,7 +3,7 @@ use crate::middlewares::auth::principal::Principal;
 use std::sync::LazyLock;
 
 /// define the default secret
-const DEFAULT_SECRET: &str = "HG2903a6BOwo2SwUye";
+const DEFAULT_SECRET: &str = "YX2343a6MGwo2ShUye";
 /// define the static JWT for global
 #[allow(unused)]
 static DEFAULT_JWT: LazyLock<Jwt> = LazyLock::new(Jwt::default);
